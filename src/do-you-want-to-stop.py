@@ -7,6 +7,5 @@ answer = None
 while answer != "yes":
     print("Hello, World!")
     answer = input('Do you want to stop? ')
-    print(answer)
     if answer == "yes":
         break
