@@ -13,9 +13,9 @@ has_upper = False
 has_special = False
 
 for i in password:
-    if i.isupper(i):
+    if i.isupper():
         has_upper = True
-    elif i.islower(i):
+    elif i.islower():
         has_lower = True
     elif i in "$#@":
         has_special = True
