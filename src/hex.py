@@ -13,12 +13,11 @@ command, x = sys.argv[1:3]
 match command:
     case "encode":
         # Implement the encoding here
-        encoding = ""
-        lst = x.split()
+        lst = list(x)
         new_lst = []
         for i in lst:
             new_lst.append(hex(ord(i)))
-        encoded = new_lst.join()
+        encoding = "".join(new_lst)
         print(encoding)
 
     case "decode":
@@ -28,5 +27,5 @@ match command:
         new_lst = []
         for i in lst:
             new_lst.append(chr(int(i, base=16)))
-        decoding = new_lst.join()
+        decoding = "".join(new_lst)
         print(decoding)
