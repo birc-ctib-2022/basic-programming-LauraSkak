@@ -24,9 +24,9 @@ match command:
     case "decode":
         # Implement the decoding here
         decoding = ""
-        lst = x.split('0x')
+        lst = x.split('0x')[1:]
         new_lst = []
         for i in lst:
-            new_lst.append(chr(int(i)))
+            new_lst.append(chr(int(i, base=16)))
         decoding = new_lst.join()
         print(decoding)
