@@ -44,7 +44,7 @@ x = [1, 2, 3, 4, 5, 6]
 match sys.argv[1]:
     case "mean":
         # put your solution to the first exercise here
-        mean = mean(x)
+        mean = sum(x)/len(x)
         print(mean)
 
     case "times":
